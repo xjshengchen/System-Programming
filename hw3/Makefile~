@@ -1,0 +1,5 @@
+all:
+	gcc -std=c99 server.c -o server
+	gcc -std=c99 file_reader.c -o cgi
+clean:
+	rm -f server file_reader

@@ -1,0 +1,17 @@
+fcntl:
+       fcntl() performs one of the operations described below on the open
+       file descriptor fd.  The operation is determined by cmd.
+
+       fcntl() can take an optional third argument.  Whether or not this
+       argument is required is determined by cmd.  The required argument
+       type is indicated in parentheses after each cmd name (in most cases,
+       the required type is int, and we identify the argument using the name
+       arg), or void is specified if the argument is not required.
+
+Advisory locking
+
+       F_GETLK, F_SETLK and F_SETLKW are used to acquire, release, and test
+       for the existence of record locks (also known as file-segment or
+       file-region locks).  The third argument, lock, is a pointer to a
+       structure that has at least the following fields (in unspecified
+       order).
